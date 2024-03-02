@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktrip_react_app=self.webpackChunktrip_react_app||[]).push([[249],{5249:(e,o,t)=>{t.r(o),t.d(o,{default:()=>l});var n=t(5475);const s="NotFoundPageComponent_section__kNGRk",a="NotFoundPageComponent_title__d9FLl",c="NotFoundPageComponent_link__GQc5J";var p=t(579);const _=()=>(0,p.jsxs)("section",{className:s,children:[(0,p.jsx)("h2",{className:a,children:"Not Found"}),(0,p.jsx)(n.k2,{to:"/",className:c,children:"Go to home page"})]}),l=()=>(0,p.jsx)(_,{})}}]);
+//# sourceMappingURL=249.d474a6a4.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktrip_react_app=self.webpackChunktrip_react_app||[]).push([[784],{1784:(e,a,p)=>{p.r(a),p.d(a,{default:()=>t});var r=p(579);const s=()=>(0,r.jsx)("div",{children:"Login Page"}),t=()=>(0,r.jsx)(s,{})}}]);
+//# sourceMappingURL=784.cae1ec64.chunk.js.map
