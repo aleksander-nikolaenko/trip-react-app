@@ -1,0 +1,58 @@
+.form {
+  width: 480px;
+}
+.formField {
+  position: relative;
+  padding: 20px;
+}
+.formField + .formField {
+  padding-top: 0px;
+}
+.error {
+  position: absolute;
+  color: var(--error-cl);
+  bottom: 0;
+}
+.label {
+  margin-bottom: 8px;
+  display: block;
+  font-size: var(--text-md);
+  font-weight: var(--bold);
+}
+.label span {
+  color: var(--error-cl);
+}
+.datePicker {
+  width: 440px;
+  outline: 1px solid var(--secondary-bg-cl);
+}
+.datePicker::placeholder {
+  color: var(--secondary-txt-cl);
+}
+.icon {
+  position: absolute;
+  right: 0;
+}
+.buttonWrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  border-top: 1px solid var(--secondary-bg-cl);
+}
+.button {
+  padding: 4px 8px;
+  box-shadow: var(--primary-shadow);
+}
+.button:hover {
+  transform: scale(1.02);
+}
+.buttonSave {
+  color: var(--primary-bg-cl);
+  background-color: var(--accent-cl);
+  border: 1px solid var(--accent-cl);
+}
+.buttonCancel {
+  background-color: transparent;
+  border: 1px solid var(--secondary-bg-cl);
+}

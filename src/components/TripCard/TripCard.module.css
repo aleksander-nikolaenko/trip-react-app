@@ -1,0 +1,33 @@
+.card {
+  flex-shrink: 0;
+  width: 200px;
+  border: 1px solid var(--secondary-txt-cl);
+  cursor: pointer;
+  box-shadow: var(--primary-shadow);
+}
+.card img {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.card:hover {
+  border-width: 2px;
+  border-color: var(--accent-cl);
+}
+.active {
+  border-width: 2px;
+  border-color: var(--accent-cl);
+}
+
+.description {
+  padding: 12px;
+}
+.city {
+  font-size: var(--text-md);
+}
+.dates {
+  margin-top: 12px;
+  font-size: var(--text-sm);
+  color: var(--secondary-txt-cl);
+}

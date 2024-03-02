@@ -1,0 +1,62 @@
+.container {
+  text-align: left;
+  position: relative;
+}
+
+.input {
+  position: relative;
+  padding: 6px 10px 5px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: 1px solid var(--secondary-bg-cl);
+}
+.placeHolder {
+  color: var(--secondary-txt-cl);
+  font-weight: var(--regular);
+}
+.selectedValue {
+  font-weight: var(--regular);
+}
+
+.menu {
+  position: absolute;
+  transform: translateY(1px);
+  width: 100%;
+  outline: 1px solid var(--secondary-bg-cl);
+  overflow: auto;
+  max-height: 244px;
+  background-color: var(--primary-bg-cl);
+  z-index: 10;
+}
+.menu::-webkit-scrollbar {
+  width: 0px;
+}
+
+.item {
+  padding: 4px 25px;
+  cursor: pointer;
+}
+
+.item:hover {
+  outline: 1px solid var(--accent-cl);
+  color: var(--accent-cl);
+}
+.item:hover.selected {
+  color: var(--white);
+}
+
+.selected {
+  background-color: var(--accent-cl);
+  color: var(--white);
+}
+
+.search {
+  padding: 5px;
+}
+
+.search input {
+  width: 100%;
+  padding: 5px;
+  outline: 1px solid var(--secondary-bg-cl);
+}

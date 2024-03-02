@@ -1,13 +1,157 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --accent-cl: #368ef2;
+  --hover-cl: #1a6dcb;
+
+  /*BACKGROUND COLORS*/
+  --primary-bg-cl: #fefefe;
+  --secondary-bg-cl: #c2c5e0;
+  --dark-bg-cl: #110e3b;
+
+  /* TEXT COLORS */
+  --primary-txt-cl: #0a0e29;
+  --secondary-txt-cl: #c2c5e0;
+
+  /*OTHER COLORS*/
+  --disabled-cl: #464962;
+  --message-cl: #ffd84f;
+  --success-cl: #47c05d;
+  --error-cl: #ee4343;
+  --purple-cl: #9747ff;
+  --white-cl: #ffffff;
+  --current-cl: #3b59ff;
+
+  /* TRANSITION */
+  --transition: 250ms linear;
+
+  /*FONTS*/
+  --font-family: 'Inter', sans-serif;
+  --line-height: 1.3;
+
+  /*FONT SIZE*/
+  --title: 30px;
+  --subtitle: 20px;
+  --text-lg: 16px;
+  --text-md: 14px;
+  --text-sm: 12px;
+
+  /*FONT WEIGHT*/
+  --bold: 700;
+  --regular: 400;
+
+  /*SHADOWS*/
+  --primary-shadow: 2px 2px 8px rgba(95, 117, 238, 0.2);
+  --shadow-blue: 1px 2px 6px rgba(54, 83, 242, 0.7);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--text-md);
+  color: var(--primary-txt-cl);
+  line-height: 1.3;
+  background-color: var(--primary-bg-cl);
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+
+  transition: background-color var(--transition), color var(--transition);
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: inherit;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+input {
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    caret-color: inherit;
+    -webkit-text-fill-color: inherit;
+    -webkit-background-clip: text;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

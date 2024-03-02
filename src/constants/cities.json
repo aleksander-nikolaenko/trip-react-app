@@ -1,0 +1,32 @@
+[
+  {
+    "id": 100,
+    "name": "Kyiv",
+    "imgSrc": "./city-img/kyiv.jpg"
+  },
+  {
+    "id": 101,
+    "name": "Kharkiv",
+    "imgSrc": "./city-img/kharkiv.jpg"
+  },
+  {
+    "id": 102,
+    "name": "Chernihiv",
+    "imgSrc": "./city-img/chernihiv.jpg"
+  },
+  {
+    "id": 103,
+    "name": "Odessa",
+    "imgSrc": "./city-img/odessa.jpg"
+  },
+  {
+    "id": 104,
+    "name": "Poltava",
+    "imgSrc": "./city-img/poltava.jpg"
+  },
+  {
+    "id": 105,
+    "name": "Zaporizhzhia",
+    "imgSrc": "./city-img/zaporizhzhia.jpg"
+  }
+]

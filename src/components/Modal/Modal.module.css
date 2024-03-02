@@ -1,0 +1,73 @@
+@keyframes fade-in {
+  from {
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-height: 80vh;
+  /* overflow-y: auto; */
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-bg-cl);
+  animation: fade-in var(--transition);
+}
+
+.head {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid var(--secondary-txt-cl);
+}
+
+.modalTitle {
+  font-size: var(--subtitle);
+  font-weight: var(--bold);
+  margin-right: auto;
+}
+
+.closeBtn {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  color: var(--primary-txt-cl);
+  background-color: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.closeBtn:before,
+.closeBtn:after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  background-color: var(--disabled-cl);
+  top: 15%;
+  left: 45%;
+  transform-origin: center;
+}
+.closeBtn:before {
+  transform: rotate(45deg);
+}
+.closeBtn:after {
+  transform: rotate(-45deg);
+}
+.closeBtn:hover:before,
+.closeBtn:hover:after {
+  background-color: var(--primary-txt-cl);
+}

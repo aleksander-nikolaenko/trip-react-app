@@ -1,0 +1,14 @@
+.dayWrapper {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+  height: 160px;
+}
+
+.dayOfWeek {
+  font-size: var(--text-md);
+  color: var(--secondary-txt-cl);
+}

@@ -1,0 +1,26 @@
+.countdownTimer {
+  font-size: var(--text-lg);
+  color: var(--primary-bg-cl);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.value {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: var(--text-sm);
+  color: var(--secondary-txt-cl);
+}

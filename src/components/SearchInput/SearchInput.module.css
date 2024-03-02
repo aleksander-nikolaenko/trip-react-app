@@ -1,0 +1,26 @@
+.label {
+  padding: 0px 20px;
+  display: flex;
+  width: 280px;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--secondary-bg-cl);
+  border-radius: 8px;
+}
+
+.input {
+  padding: 12px 0px;
+  width: 100%;
+  font-size: var(--text-md);
+  outline: none;
+  color: var(--primary-txt-cl);
+}
+.input::placeholder {
+  color: var(--primary-txt-cl);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--primary-txt-cl);
+}
